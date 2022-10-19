@@ -2,14 +2,22 @@
 import { faLocation, faLocationArrow, faLocationCrosshairs, faLocationDot, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import './PersonalDetails.css'
+import './PersonalDetails.css';
+import Swal from 'sweetalert2';
+
 const PersonalDetails = ({time}) => {
     const [second, setSecond]= useState(0);
     
     const handle = event => {
         setSecond(event.target.value)
     }
-
+    const workoutComplete = ()=> {
+        Swal.fire(
+            'Good job!',
+            'You completed todays exercise!',
+            'success'
+          )
+    }
     let total = 0;
     for (const i in time) {
       total += time[i];
@@ -71,7 +79,7 @@ const PersonalDetails = ({time}) => {
                 </div>
             </div>
             <div className='mt-6 grid place-content-center w-3/4'>
-                <button className="btn btn-info w-52 font-bold">Workout Completed</button>
+                <button onClick={workoutComplete} className="btn btn-info w-52 font-bold">Workout Completed</button>
             </div>
 
 
