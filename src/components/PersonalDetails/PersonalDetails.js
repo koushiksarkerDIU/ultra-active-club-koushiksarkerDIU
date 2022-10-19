@@ -1,11 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
 
-const PersonalDetails = () => {
-    const [second, setSecond]= useState(0)
+const PersonalDetails = ({time}) => {
+    const [second, setSecond]= useState(0);
+    
     const handle = event => {
         setSecond(event.target.value)
     }
+
+    let total = 0;
+    for (const i in time) {
+      total += time[i];
+    }
+    
     return (
         <div className='container'>
             <div className='flex'>
@@ -55,10 +62,10 @@ const PersonalDetails = () => {
             <div className='mt-8'>
                 <h1 className='font-semibold text-2xl'>Workout Details</h1>
                 <div className='bg-slate-400 w-3/4 p-2 rounded-xl mt-4'>
-                    <h1 className='text-black font-semibold'>Workout Time </h1>
+                    <h1 className='text-black font-semibold ml-4'>Workout Time :<strong className='ml-4'>{total} Sec</strong></h1>
                 </div>
                 <div className='bg-slate-400 w-3/4 p-2 rounded-xl mt-4'>
-                    <h1 className='text-black font-bold ml-4'>Break Time : <strong className='ml-4'>{second}</strong></h1>
+                    <h1 className='text-black font-semibold ml-4'>Break Time : <strong className='ml-4'>{second}</strong></h1>
                 </div>
             </div>
             <div className='mt-6 grid place-content-center w-3/4'>

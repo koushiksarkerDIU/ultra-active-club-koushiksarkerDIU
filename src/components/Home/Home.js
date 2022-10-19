@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home = () => {
     const [exercises, setExercises]=useState([])
-    const [time, setTime] = useState(0)
+    const [time, setTime] = useState('')
     useEffect(()=>{
         fetch('exercise.json')
         .then(res => res.json())
@@ -13,14 +13,14 @@ const Home = () => {
     },[])
 
     const addToList = (props) =>{
-        console.log('clicked', props)
-
+        const newTime = [...time, props]
+        setTime(newTime)
     }
 
     return (
         <div className='main-container'>
             <Exercises exercises={exercises} addToList={addToList}></Exercises>
-            <PersonalDetails></PersonalDetails>
+            <PersonalDetails time={time}></PersonalDetails>
         </div>
     );
 };
