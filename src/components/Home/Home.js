@@ -18,9 +18,13 @@ const Home = () => {
     }
 
     return (
-        <div className='main-container'>
-            <Exercises exercises={exercises} addToList={addToList}></Exercises>
-            <PersonalDetails time={time}></PersonalDetails>
+        <div className='flex-none md:flex'>
+            <div className='md:w-3/4'>
+                <Exercises exercises={exercises} addToList={addToList}></Exercises>
+            </div>
+            <div className='md:w-1/4'>
+                <PersonalDetails time={time}></PersonalDetails>
+            </div>
         </div>
     );
 };

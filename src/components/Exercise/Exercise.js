@@ -5,8 +5,8 @@ const Exercise = (props) => {
     const {Title , Details, img, Time}= exercise
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img className='h-64' src={img} alt="Shoes" /></figure>
+            <div className="card card-compact bg-base-100 shadow-xl">
+                <figure><img className='' src={img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{Title}</h2>
                     <p>{Details ? Details.slice(0,200) + '... see more': Details } </p>

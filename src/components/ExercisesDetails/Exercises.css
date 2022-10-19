@@ -1,8 +1,0 @@
-.exercises-container{
-    margin: 20px;
-    padding: 20px;
-}
-.exercise-container{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-}

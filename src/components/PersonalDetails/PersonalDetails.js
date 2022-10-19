@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
-
+import './PersonalDetails.css'
 const PersonalDetails = ({time}) => {
     const [second, setSecond]= useState(0);
     
@@ -14,7 +14,7 @@ const PersonalDetails = ({time}) => {
     }
     
     return (
-        <div className='container'>
+        <div className='container mt-5'>
             <div className='flex'>
                 <img className="mask mask-squircle w-1/4" src="https://qph.cf2.quoracdn.net/main-qimg-835aa228a5d9afe1cd729701b37531ff-lq" />
                 <div className='p-3 '>
@@ -23,7 +23,7 @@ const PersonalDetails = ({time}) => {
                 </div>
             </div>
             <div>
-                <div className="stats stats-vertical lg:stats-horizontal shadow">
+                <div className="stats stats-horizontal shadow">
                     <div className="stat">
                         <div >
                             <strong className="stat-value">62</strong>
@@ -59,13 +59,13 @@ const PersonalDetails = ({time}) => {
                 </div>
             </div>
             
-            <div className='mt-8'>
+            <div className='mt-8 mx-auto'>
                 <h1 className='font-semibold text-2xl'>Workout Details</h1>
                 <div className='bg-slate-400 w-3/4 p-2 rounded-xl mt-4'>
                     <h1 className='text-black font-semibold ml-4'>Workout Time :<strong className='ml-4'>{total} Sec</strong></h1>
                 </div>
                 <div className='bg-slate-400 w-3/4 p-2 rounded-xl mt-4'>
-                    <h1 className='text-black font-semibold ml-4'>Break Time : <strong className='ml-4'>{second}</strong></h1>
+                    <h1 className='text-black font-semibold ml-4'>Break Time : <strong className='ml-4'>{second} Sec</strong></h1>
                 </div>
             </div>
             <div className='mt-6 grid place-content-center w-3/4'>
