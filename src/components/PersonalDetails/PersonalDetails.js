@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { faLocation, faLocationArrow, faLocationCrosshairs, faLocationDot, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import './PersonalDetails.css'
 const PersonalDetails = ({time}) => {
@@ -14,12 +16,12 @@ const PersonalDetails = ({time}) => {
     }
     
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 mx-3'>
             <div className='flex'>
                 <img className="mask mask-squircle w-1/4" src="https://qph.cf2.quoracdn.net/main-qimg-835aa228a5d9afe1cd729701b37531ff-lq" />
-                <div className='p-3 '>
+                <div className='p-3'>
                     <h1 className='text-3xl font-bold m-2'>Koushik Sarker</h1>
-                    <p className='text-lg m-2'>Dhanmonddi, Dhaka</p>
+                    <p className='text-lg m-2'><FontAwesomeIcon icon={faMapLocationDot}></FontAwesomeIcon> Dhanmonddi, Dhaka</p>
                 </div>
             </div>
             <div>
@@ -59,7 +61,7 @@ const PersonalDetails = ({time}) => {
                 </div>
             </div>
             
-            <div className='mt-8 mx-auto'>
+            <div className='mt-8'>
                 <h1 className='font-semibold text-2xl'>Workout Details</h1>
                 <div className='bg-slate-400 w-3/4 p-2 rounded-xl mt-4'>
                     <h1 className='text-black font-semibold ml-4'>Workout Time :<strong className='ml-4'>{total} Sec</strong></h1>
