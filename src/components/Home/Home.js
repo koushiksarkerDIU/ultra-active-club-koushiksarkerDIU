@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Exercises from '../ExercisesDetails/Exercises';
 import PersonalDetails from '../PersonalDetails/PersonalDetails';
+import Question from '../Questions/Question';
 import './Home.css'
 
 const Home = () => {
@@ -18,12 +19,17 @@ const Home = () => {
     }
 
     return (
-        <div className='flex-none md:flex'>
-            <div className='md:w-3/4'>
-                <Exercises exercises={exercises} addToList={addToList}></Exercises>
+        <div>
+            <div className='flex-none md:flex'>
+                <div className='md:w-3/4'>
+                    <Exercises exercises={exercises} addToList={addToList}></Exercises>
+                </div>
+                <div className='md:w-1/4'>
+                    <PersonalDetails time={time}></PersonalDetails>
+                </div>
             </div>
-            <div className='md:w-1/4'>
-                <PersonalDetails time={time}></PersonalDetails>
+            <div>
+                <Question></Question>
             </div>
         </div>
     );

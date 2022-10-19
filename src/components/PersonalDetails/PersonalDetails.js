@@ -9,7 +9,9 @@ const PersonalDetails = ({time}) => {
     const [second, setSecond]= useState(0);
     
     const handle = event => {
-        setSecond(event.target.value)
+        const e= event.target.value;
+        const set = localStorage.setItem("breaktime" , JSON.stringify(e))
+        setSecond(e);
     }
     const workoutComplete = ()=> {
         Swal.fire(
