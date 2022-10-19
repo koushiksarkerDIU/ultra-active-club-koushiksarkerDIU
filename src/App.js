@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Install tailwindcss and daisyui</h1>
-      <button className="btn btn-secondary">Button</button>
+      <Home></Home>
     </div>
   );
 }

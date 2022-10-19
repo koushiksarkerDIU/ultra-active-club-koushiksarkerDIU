@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "Title": "Sit Up Benches",
+      "Details": "Abs bench is the most common and frequently used abs exercise equipment. It is available in almost all gyms or fitness centers as the bench can be used for a variety of exercises. They are useful for both beginners or advanced trainees. The ab bench is also known as an adjustable sit-up machine, as you can adjust (increase or decrease) the angle of the bench",
+      "img": "Gaines Boone",
+      "Time": 30
+    },
+    {
+      "id": 2,
+      "Title": "Kettlebell",
+      "Details": "Kettlebells are weights that are used for weight training. With a handle on the top, they look like a cross between a dumbbell and a cannonball. One kettlebell exercise that specifically targets your abdominal muscles is the Kettlebell Windmill.",
+      "img": "Hinton Solis",
+      "Time": 30
+    },
+    {
+      "id": 3,
+      "Title": "Ab Wheels",
+      "Details": "At a first glance, the Abs Wheel seems like a fairly simple machine to work on. However, there’s much more to it than what meets the eye. It looks like a small dumbbell on wheels that you can hold on to at each side.",
+      "img": "Stevenson Lowe",
+      "Time": 30
+    },
+    {
+      "id": 4,
+      "Title": "Exercise/Stability Ball",
+      "Details": "Although the Stability Ball is not exactly a “machine,” it is one of the most effective equipments that tone your midsection. The stability ball is a huge and inflatable rubber ball that is used for several purposes, ranging from strengthening core muscles and increasing balance to improve posture, physical therapy, and rehabilitation. Ball workouts can be used in many ways to train the full body and make daily exercising more enjoyable.",
+      "img": "Bertie Conway",
+      "Time": 30
+    },
+    {
+      "id": 5,
+      "Title": "Resistance Bands",
+      "Details": "The resistance band can be used in many ways to enhance common core exercises such as crunches, sit-ups and so on. This tool helps to strengthen ab muscles and also supports the belly fat burning process. You can do efficient workouts with the band, and as resistance grows progressively, it improves health, flexibility and agility of the person.",
+      "img": "Marcia Nunez",
+      "Time": 30
+    },
+    {
+      "id": 6,
+      "Title": "Dumbbells",
+      "Details": "Dumbbells are also effective tools for ab training. First you spend time doing various body weight core training until you gain enough strength. Then try the ab exercises. Gradually increase the amount of weights you use",
+      "img": "Marcia Nunez",
+      "Time": 30
+    }
+  ]
